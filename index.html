@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Bit Retro Mario Style Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <div class="hud-item">
+                <div class="label">MARIO</div>
+                <div id="score" class="value">000000</div>
+            </div>
+            <div class="hud-item">
+                <div class="label">COINS</div>
+                <div id="coins" class="value">x00</div>
+            </div>
+            <div class="hud-item">
+                <div class="label">WORLD</div>
+                <div id="world" class="value">1-1</div>
+            </div>
+            <div class="hud-item">
+                <div class="label">TIME</div>
+                <div id="time" class="value">400</div>
+            </div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div id="loading-screen">載入中...</div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
